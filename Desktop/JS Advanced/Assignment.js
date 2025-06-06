@@ -49,6 +49,14 @@ const summation = () => {
 };
 summation();
 // Assignment: Create an arrow function that is able to find the simple interest of three different individuals
+const SI =(P,R,T)=>{
+ 
+  let si = (P*R*T)/100
+  console.log(`The simple interest is : ${si}`)
+}
+SI(10000,15,5);
+SI(7500,5,3);
+SI(20500,10,3)
 
 //   Assignment use async to
 // https://official-joke-api.appspot.com/random_joke

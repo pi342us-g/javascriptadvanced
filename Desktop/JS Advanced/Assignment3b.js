@@ -64,11 +64,17 @@ console.log(car)
 
 // Assignment
 //Create an array of five numbers. use map to double them and filter to extract numbers greater than 5
-// Use map() method to convert an array of prices with 16% value added tax VAT  and show the final cost
+
 let numbers = [4,1,19,20,36]
 let newnumber = numbers.map(n =>(n*2)).filter(n=>n>5)
 console.log(newnumber)
-// fimd out how to replace multiple occurence
+// Use map() method to convert an array of prices with 16% value added tax VAT  and show the final cost
+let prices = [500,250,300,100]
+let newprices = prices.map(p =>(p*16/100))
+// tatal VAT
+
+
+// find out how to replace multiple occurence
 let text = "I will meet Pius and Mike tomorrow morning. We will be travelling with Pius and Mike to ukwala , Pius will be head of State";
 text = text.replaceAll("Pius","Jeff");
 text = text.replaceAll("Mike","Hellen");
@@ -89,9 +95,7 @@ console.log(cost)
 console.log(description)
 
 
-// Assignment
-//Create an array of five numbers. use map to double them and filter to extract numbers greater than 5
-// Use map() method to convert an array of prices with 16% value added tax VAT  and show the final cost
+
 
 //Step1: create a list of 5 countries
 let countries = ["USA","China","Kuwait","Kenya","Egypt"]
