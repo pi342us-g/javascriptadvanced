@@ -72,7 +72,7 @@ console.log(newnumber)
 let prices = [500,250,300,100]
 let newprices = prices.map(p =>(p*16/100))
 // tatal VAT
-
+ 
 
 // find out how to replace multiple occurence
 let text = "I will meet Pius and Mike tomorrow morning. We will be travelling with Pius and Mike to ukwala , Pius will be head of State";
