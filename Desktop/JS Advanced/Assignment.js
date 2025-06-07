@@ -49,21 +49,34 @@ const summation = () => {
 };
 summation();
 // Assignment: Create an arrow function that is able to find the simple interest of three different individuals
-const SI =(P,R,T)=>{
- 
-  let si = (P*R*T)/100
-  console.log(`The simple interest is : ${si}`)
-}
-SI(10000,15,5);
-SI(7500,5,3);
-SI(20500,10,3)
+const SI = (P, R, T) => {
+  let si = (P * R * T) / 100;
+  console.log(`The simple interest is : ${si}`);
+};
+SI(10000, 15, 5);
+SI(7500, 5, 3);
+SI(20500, 10, 3);
 
 //   Assignment use async to
 // https://official-joke-api.appspot.com/random_joke
 // Extract and print out the contents of the setup and the punchline
+const fetchData = async () => {
+  try {
+    // fetch the data from api
+    const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+    // converting the response into json
+    let { setup, punchline } = await response.json();
+    //print setup
+    console.log("The stup is:" + setup);
+    // print punchline
+    console.log("The punchline is "+ punchline);
+  } catch (error) {
+    console.error("Error fetching the data" + error);
+  }
+};
+fetchData();
 
-// https://sengi2025.pythonanywhere.com/api/getproducts
-// On the above api endpoint extract the product_name, and the price and print them out
+
 
 //  Assignment: Create a button in HTML that changes a paragraph's text when clicked using
 //JavaScript
